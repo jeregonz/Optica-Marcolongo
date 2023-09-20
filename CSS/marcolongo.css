@@ -1,0 +1,313 @@
+/**************estilo general**************/
+body {
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    display: none;
+}
+
+.logo {
+    width: 7em;
+    height: 7em;
+}
+
+#btnMenu {
+    height: 2em;
+    width: 2em;
+}
+
+nav {
+    display: none;
+}
+
+nav.show {
+    display: flex;
+    flex-direction: column;
+}
+
+.navItem {
+    cursor: pointer;
+    display: block;
+    padding-inline: 0.5em;
+    color: white
+}
+
+.navItem:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(0, 0, 0);
+    margin: 0%;
+    padding: 0%;
+    font-weight: bolder;
+}
+
+.navItem {
+    border-bottom: 1px solid white;
+    text-align: center;
+    list-style: none;
+    margin: 1px;
+    font-size: 1.5em;
+    color: white;
+}
+
+.main_principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h2, p {
+    text-align: center;
+    background-color: #9f9f9f00;
+}
+
+.imagen_local {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bolder;
+    padding: 0.1em;
+    margin-top: 0.5em;
+}
+
+header, nav, main, footer {
+    box-shadow: 0px 0px 0.5em 0.5em #000000;
+}
+
+.informacion, .redes {
+    padding: inherit;
+    margin: inherit;
+    list-style: none;
+}
+
+.footlogos {
+    block-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+footer a {
+    color: rgb(0, 0, 94);
+}
+
+footer li {
+    padding-bottom: 5px;
+}
+/**************estilo productos**************/
+.main_secundario {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(rgba(5, 7, 12, 0.28), rgba(5, 7, 12, 0.61)),
+        url("../Images/opticamarcolongo1.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: 40em;
+}
+
+.intro_productos {
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(225, 225, 225, 0.925) 18%, rgba(255, 255, 255, 0.911) 100%);
+}
+
+table, td, tr, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.2em;
+}
+
+table {
+    background-color: #fafafae3;
+    box-shadow: 0px 0px 0.5em 0.5em #ffffffa8;
+    margin: 0.5em;
+}
+
+thead {
+    background-color: rgba(11, 10, 11, 0.778);
+    color: rgb(223, 237, 237);
+}
+
+th, td {
+    padding-inline: 1em;
+}
+
+.marca {
+    width: 52.52px;
+}
+
+/**************estilo de pedidos**************/
+.formPedidos {
+    border-radius: 20px;
+    border-style: solid;
+    font-weight: bolder;
+    background-color: white;
+    margin-block: 3em;
+    padding-bottom: 1em;
+    padding-inline: 1.5em;
+    box-shadow: 0px 0px 0.5em 1em #ffffffa8;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+}
+
+input,
+select,
+label {
+    margin: auto;
+}
+
+label {
+    padding: 3px
+}
+
+#captchaForm{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(179, 179, 179); 
+    margin-block: 2%;
+
+}
+
+#zonaCaptcha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#captcha {
+    background-image: url("../Images/captcha.png");
+    user-select: none; 
+    font-size: 1.4em; 
+    border: solid black;
+}
+
+#captcha {
+    margin: 0%;
+}
+
+#btnRecarga {
+    padding: 0%;
+    border-radius: 20%;
+    margin-inline: 0.5em;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: #32bea6;
+    cursor: pointer;
+}
+
+/************ intranet *************/
+.form_Clientes{
+    box-shadow: 0px 0px 0.5em 0.2em #ffffffa8;
+    padding-top: 0px;
+    margin-top: 2em;
+}
+.form_Clientes input {
+    width: 10em;
+}
+.destacados {
+    background-color: hsl(185deg 100% 50% / 74%);
+    font-weight: bolder;
+}
+#txt_editar {
+    background-color: white;
+    align-self: baseline;
+    margin-bottom: 1px;
+}
+.borrador {
+    background-color:red;
+}
+.borrador, .editor{
+    cursor: pointer;
+}
+/*************************************** para pantalla grande ***************************************/
+
+@media screen and (min-width: 660px){
+    /******************* estilo general *******************/
+    header {
+        flex-direction: row;
+        justify-content: space-evenly;
+        background: linear-gradient(rgb(49 49 49 / 28%), rgb(0 0 0)),
+            url('../Images/opticamarcolongo1.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    h1 {
+        display:block;
+        font-size: 4em;
+        color: white;
+    }
+    .logo {
+        width: 9em;
+        height: 9em;
+    }
+    nav {
+        display: block;
+    }
+    #btnMenu{
+        display: none;
+    }
+    .navigation {
+        flex-direction: row;
+    }
+    .navItem {
+        border: 0px;
+    }
+    .main_principal {
+        flex-direction: row;
+    }
+    .quienes_somos,
+    .nuestra_propuesta {
+        width: 50%;
+        padding: 0.2em;
+    }
+    footer {
+        flex-direction: row;
+        padding-inline: 2%;
+        
+        background: linear-gradient(180deg, rgb(45 45 45 / 88%) 0%, rgb(225 225 225) 18%, rgba(255, 255, 255, 1) 100%);
+    }
+    .informacion, .redes {
+        margin: revert;
+    }
+    footer a {
+        color: black;
+    }
+    footer a:hover {
+        color: rgb(0, 0, 94);
+        text-decoration: underline;
+    }
+    footer li {
+        padding-bottom: 0px;
+    }
+
+    /******************estilo pedidos******************/
+    .formPedidos {
+        padding-inline: 4em;
+    }
+    .form_Clientes {
+        flex-direction: column;
+    }
+}

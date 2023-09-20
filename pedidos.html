@@ -1,0 +1,50 @@
+<div class="main_secundario">
+    <div class="formPedidos">
+        <form>
+            <label>Seleccione su producto</label>
+            <select>
+                <option>...</option>
+                <option value="Usual">Usual</option>
+                <option value="Armani">Armani</option>
+                <option value="Vogue">Vogue</option>
+                <option value="RayBan">Ray Ban</option>
+                <option value="Vulk">Vulk</option>
+                <option value="Rusty">Rusty</option>
+                <option value="Legacy">Legacy</option>
+                <option value="360">360</option>
+                <option value="Mormaii">Mormaii</option>
+                <option value="ElizabethArdem">Elizabeth Ardem</option>
+                <option value="PaulaCahenDAnvers">Paula Cahen D'Anvers</option>
+                <option value="TeresaCalandra">Teresa Calandra</option>
+                <option value="Oakley">Oakley</option>
+                <option value="Simones">Simones</option>
+            </select>
+            <label>Apellido y Nombre</label>
+            <input type="text" name="nombre" vlaue="" required>
+            <label>Direccion</label>
+            <input type="number" name="direcccion" vlaue="" required>
+            <label>Número de Telefono</label>
+            <input type="number" name="telefono" vlaue="" required>
+            <label>Email</label>
+            <input type="email" name="email" vlaue="" required>
+            <label>Metodo de pago:</label>
+            <label>Tarjeta de Crédito</label>
+            <input type="radio" name="tarjeta" value="credito" />
+            <label>Tarjeta de Débito</label>
+            <input type="radio" name="tarjeta" value="debito" />
+            <label>Número de Tarjeta</label>
+            <input type="number" name="num_tarjeta" value="">
+            <span id="captchaForm">
+                <label>Captcha</label>
+                <span id="zonaCaptcha">
+                    <label id="captcha"></label>
+                    <button id="btnRecarga" type="button"><img src="Images/reload.svg"></button>
+                </span>
+                <label>Completa el captcha</label>
+                <input id="RTA_captcha" type="text" name="RTA_captcha" value="">
+                <label id="validez">.</label>
+            </span>
+            <input id="btnEnviar" type="submit" value="ENVIAR">
+        </form>
+    </div>
+</div>
